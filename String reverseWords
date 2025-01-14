@@ -1,0 +1,8 @@
+class Solution {
+    public String reverseWords(String str) {
+        str = str.trim();
+        String[] words = str.split("\\s+");
+        Collections.reverse(Arrays.asList(words));
+        return String.join(" ", words);
+    }
+}
